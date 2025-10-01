@@ -36,24 +36,24 @@ export default function Code({newName, newTitle, newEmail, newX}) {
             <span className={style.line}>
               <span className={style.lineNumber}>2</span>{" "}
               <span className={style.key}>"name":</span>{" "}
-              <span className={style.string}>{newName}</span>
+              <span className={style.string}>"{newName}"</span>
             </span>
             <span className={style.line}>
               <span className={style.lineNumber}>3</span>{" "}
               <span className={style.key}>"title":</span>{" "}
-              <span className={style.string}>{newTitle}</span>
+              <span className={style.string}>"{newTitle}"</span>
             </span>
             <span className={style.line}>
               <span className={style.lineNumber}>4</span>{" "}
               <span className={style.key}>"email":</span>{" "}
               <span className={style.value}>
-                {newEmail}
+                "{newEmail}""
               </span>
             </span>
             <span className={style.line}>
               <span className={style.lineNumber}>5</span>{" "}
               <span className={style.key}>"x":</span>{" "}
-              <span className={style.string}>{newX}</span>
+              <span className={style.string}>"{newX}"</span>
             </span>
             <span className={style.line}>
               <span className={style.lineNumber}>6</span> {"}"}

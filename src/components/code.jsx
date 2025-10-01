@@ -47,7 +47,7 @@ export default function Code({newName, newTitle, newEmail, newX}) {
               <span className={style.lineNumber}>4</span>{" "}
               <span className={style.key}>"email":</span>{" "}
               <span className={style.value}>
-                "{newEmail}""
+                "{newEmail}"
               </span>
             </span>
             <span className={style.line}>

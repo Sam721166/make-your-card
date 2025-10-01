@@ -4,11 +4,11 @@
 .
 .
 
-install packages to run it locally : html2canvas, react-icons
+##install packages to run it locally : html2canvas, react-icons
 .
 .
 .
-run : npm run dev
+-##run : npm run dev
 
 
 # React + Vite

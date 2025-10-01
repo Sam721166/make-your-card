@@ -1,0 +1,126 @@
+.cardWrapper {
+  background: #1e1e1e !important;
+  color: #fff !important;
+  border-radius: 12px;
+  min-width: 280px;
+  max-width: 90vw;
+  display: inline-block;
+  font-family: "Fira Code", monospace;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5),
+              inset 0 0 5px rgba(255, 255, 255, 0.05);
+  overflow: auto;
+  border: 1px solid #2d2d2d;
+  margin: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Top Header */
+.header {
+  display: flex;
+  align-items: center;
+  background: #2b2b2b !important;
+  padding: 6px 12px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  margin-right: 12px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.fileName {
+  flex: 1;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* File Tab */
+.fileTab {
+  background: #1e1e1e !important;
+  padding: 6px 12px;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Icons Row */
+.icons {
+  display: flex;
+  gap: 14px;
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #bbb;
+  border-bottom: 1px solid #333;
+}
+
+/* JSON Code Area */
+.content {
+  background: #1e1e1e !important;
+  padding: 8px 15px;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: pre-wrap; /* wrap long words */
+  word-wrap: break-word; /* ensure email fits */
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.lineNumber {
+  color: #666;
+  width: 22px;
+  text-align: right;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.key {
+  color: #f77669; /* reddish */
+}
+
+.value {
+  color: #dcdcdc; /* gray */
+  overflow-wrap: break-word;
+}
+
+.string {
+  color: #c3e88d; /* green */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .cardWrapper {
+    min-width: 180px;
+    max-width: 95vw;
+    font-size: 13px;
+    margin: 10px;
+    padding: 0;
+  }
+  .content {
+    font-size: 12px;
+    padding: 6px 5px;
+  }
+  .header, .fileTab, .icons {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}

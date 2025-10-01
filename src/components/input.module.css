@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
+
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px black;
+    border-radius: 30px;
+    height: 600px;
+    width: 700px;
+    margin-left: 20px;
+}
+.right{
+    margin-left: -40px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin-bottom: 100px;
+    /* margin-top: 10px; */
+    align-items: center;
+    /* margin-left: 100px; */
+
+}
+
+.main input{
+    width: 320px;
+    height: 45px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-left: 12px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    cursor: pointer;
+
+}
+.header{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+}
+.file{
+    width: 300px;
+    height: 35px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-left: 12px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    display: flex;
+    align-items: center;
+}
+.file::file-selector-button{
+      /* border: 2px solid #6c5ce7; */
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
+  background-color: #000000;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin: 2.5px 0px;
+  margin-right: 8px;
+  margin-left: -9.5px;
+    
+}
+.file::file-selector-button:hover{
+    transition: background-color 0.1s;
+    background-color: #2d2d2d;
+}
+.main button{
+    margin-top: 20px;
+    margin-bottom: -50px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 335px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.main button:hover{
+    transition: background-color 0.1s;
+    background-color: #2d2d2d;
+}
+.noReasult{
+    display: flex;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 110px;
+    margin-left: 52px;
+}
+.cardMain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.cardMain button{
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 300px;
+    height: 45px;
+    font-weight: 100;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.cardMain button:hover{
+    transition: background-color 0.1s;
+    background-color: #2d2d2d
+}
+
+@media (max-width: 768px) {
+
+  .hero{
+    flex-direction: column;
+  }
+  .left{
+    width: 400px;
+    border: none;
+    justify-content: center;
+    align-items: start;
+  }
+  .header{
+    font-size: 1.8rem;
+  }
+  .main input{
+    width: 220px;
+    font-size: 1rem;
+  }
+  .main button{
+    width: 239px;
+    
+  }
+  .noReasult{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    width: 400px;
+  }
+  .noReasult h1{
+    text-align: center;
+  }
+  .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .cardMain{
+    margin-top: -150px;
+  }
+  .cardMain button{
+    width: 200px;
+    font-size: 1rem;
+  }
+}
